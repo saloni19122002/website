@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Buy Now - Fashion Stylist Website</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .buy-container {
+      max-width: 500px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .buy-container h2 {
+      text-align: center;
+      color: #ff6f61;
+      margin-bottom: 20px;
+    }
+
+    .buy-container form input,
+    .buy-container form select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .buy-container form button {
+      width: 100%;
+      background-color: #ff6f61;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    .buy-container p {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Fashion Stylist Website</h1>
+    <p>Your Style, Simplified with AI</p>
+  </header>
+
+  <div class="buy-container">
+    <h2>Complete Your Purchase</h2>
+    <form action="#" method="POST">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="text" placeholder="Shipping Address" required />
+      <select required>
+        <option value="">Select Payment Method</option>
+        <option value="cod">Cash on Delivery</option>
+        <option value="card">Credit/Debit Card</option>
+        <option value="upi">UPI</option>
+      </select>
+      <button class="buy-button" onclick="window.location.href='thankyou.html'">Buy Now</button>
+    </form>
+    <p><a href="shop.html">← Back to Shop</a></p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Fashion Stylist Website | Designed by Saloni Chavan</p>
+  </footer>
+
+</body>
+</html>
